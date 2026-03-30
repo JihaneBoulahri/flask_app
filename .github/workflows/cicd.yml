@@ -22,8 +22,8 @@ jobs:
         
         - name: Build and Push Docker image
           run: |
-            docker build -t Jihane/flask_devops_demo:latest .
-            docker push Jihane/flask_devops_demo:latest
+            docker build -t Jihane/flask1:latest .
+            docker push Jihane/flask1:latest
         - name: Deploy via SSH
           run : |
              echo "${{secrets.SSH_KEY}}" > key.pem
